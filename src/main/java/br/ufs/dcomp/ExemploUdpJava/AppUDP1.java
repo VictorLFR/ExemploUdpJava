@@ -16,6 +16,7 @@ public class AppUDP1 {
             InetAddress destination_address = InetAddress.getLocalHost();
             int destination_port = 20000; 
             while(true) {
+                System.out.print("[ Digite a sua mensagem: ");
                 String msg = scanner.nextLine();
                 byte[] msg_buf = msg.getBytes();
                 int msg_size = msg_buf.length;
